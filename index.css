@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    line-height: 1.6;
+    font-size: 1.6rem;
+    width: 100vw;
+    background-color: #f0f2f5;
+    font-family:  Helvetica, Arial, sans-serif;
+    padding-top: 10%;
+    position: relative;
+}
+.container{
+    display: flex;
+    gap: 5rem;
+    max-width: 90vw;
+    padding: 0 15rem;
+    align-items: center;
+}
+.mainContainer{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+.heading{
+    color: #1877f2;
+    font-size: 5.6rem;
+    font-weight: 800;
+}
+.peragraph{
+    font-size: 2.4rem;
+}
+.formContainer{
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    width: 40%;
+}
+.formBox{
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 0 2rem .2rem #d3c9c9 ;
+    padding: 2rem;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+.inputLogin,
+button,
+.input{
+    width: 100%;
+    font-size: 1.8rem;
+    padding: 1rem 1.6rem;
+    border-radius: .6rem;
+    border: 1px solid #dddfe2;
+}
+.inputLogin:focus-visible{
+    outline: none;
+}
+.inputLogin:focus{
+    border: 1px solid #1877f2;
+}
+.inputLogin:focus::placeholder{
+    /* border: 1px solid #1877f2; */
+    color: #aaa;
+}
+.btn{
+    cursor: pointer;
+    background-color: #1877f2;
+    color: #fff;
+    font-weight: 600;
+}
+hr{
+    width: 100%;
+}
+.forgettenLink{
+    color: #1877f2;
+}
+
+.createBtn{
+    color: #fff;
+    margin-top: 2rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+    background-color: #42b72a;
+    width: auto;
+    cursor: pointer;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+.page a:hover,
+.page a:active,
+.forgettenLink:hover,
+.forgettenLink:active{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.page{
+    text-align: center;
+}
+.passwordContiner{
+    width: 100%;
+    position: relative;
+}
+
+.passwordInput:valid + .icon{
+    display: inline-block;
+}
+.icon{
+position: absolute;
+right: 2%;
+top: 50%;
+transform: translateY(-50%);
+display: none;
+padding: .5rem;
+border-radius: 50%;
+cursor: pointer;
+}
+.icon:hover{
+    background-color: #f0f2f5;
+}
+/* SIGN UP PAGE */
+.outerContainer{
+    width: 100vw;
+    min-height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff85;
+    display: none;
+}
+.signupPage{
+    position: relative;
+    background-color: #fff;
+    width: 50rem;
+    border-radius: 1rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.headingSecondary{
+    font-size: 3rem;
+    line-height: 1;
+}
+.signupheading{
+    margin-bottom: 2rem;
+    position: relative;
+    margin-bottom: 4rem;
+}
+.signupheading::before{
+    content: "";
+    display: inline-block;
+    width: 150%;
+    height: 1px;
+    position: absolute;
+    right: -5%;
+    bottom: -50%;
+    background-color: #eee;
+}
+.signupForm{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.inputBox{
+    display: flex;
+    gap: 1rem;
+}
+
+.inputSpecial{
+    background-color: #f0f2f5;
+}
+
+label{
+    border: 2px solid;
+}
+.radioLabel{
+    display: flex;
+    justify-content: space-between;
+}
+.signupPara{
+    font-size: 1.2rem;
+    line-height: 1;
+}
+.signupBtn{
+    cursor: pointer;
+    background-color: #00a400;
+    padding: 1rem;
+    border: none;
+    font-size: inherit;
+    border-radius: .3rem;
+    color: #fff;
+    font-weight: 700;
+    align-self: center;
+    padding: 1rem 5rem;
+}
+.signupBtn:hover{
+    background-color: #00a400cc;
+}
+.signupPara a{
+    cursor: pointer;
+    text-decoration: none;
+
+}
+.close{
+    font-size: 3rem;
+    font-weight: 500;
+    color: #aaa;
+    position: absolute;
+    right: 2%;
+    top: 2%;
+    cursor: pointer;
+}

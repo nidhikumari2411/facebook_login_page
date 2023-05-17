@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="index.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+  <div class="mainContainer">
+    <h1 class="heading">facebook</h1>
+    <p class="peragraph">Facebook helps you connect and share with the people in your life.</p>
+  </div>
+  <div class="formContainer">
+      <div class="formBox">
+        <form class="form">
+          <input type="email" class="inputLogin emailInput" placeholder="Email adress or phone number" required>
+          <div class="passwordContiner">
+            <input type="password" class="inputLogin passwordInput" placeholder="Password" required>
+            <ion-icon class="icon" name="eye-off-outline"></ion-icon></div>
+          <input type="submit" class=" inputLogin btn" value="Log in">
+          <a class="forgettenLink">Forgetten password?</a>
+          <hr>
+        </form>
+        <button class="createBtn">Create new account</button>
+      </div>
+    <p class="page"><a><strong>Create a Page</strong></a> for a celebrity, brand or business.</p>
+  </div>
+</div>
+
+<div class="outerContainer">
+
+  <div class="signupPage">
+<span class="close">&times;</span>
+    <h2 class="headingSecondary">Sign Up</h2>
+    <p class="signupheading">It's quick and easy</p>
+  
+    <form class="signupForm" action="#">
+      <div class="inputBox">
+        <input type="text" name="fName" class="input inputSpecial inputFname" placeholder="First name" required>
+        <input type="text" name="lName" class="input inputSpecial inputFname" placeholder="Surname" required>
+      </div>
+      <input type="text" name="mNumber" class="input inputSpecial inputMobile" placeholder="Mobile number or email address" required>
+      <input type="password" name="password" class="input inputSpecial inputPassword" placeholder="New password" required>
+  
+      <p class="inputType">Date of birth <ion-icon name="help-circle"></ion-icon></p>
+      <div class="inputBox">
+        <select name="date" id="value" class="input inputDate"></select>
+        <select name="date" id="value" class="input inputMonth"></select>
+        <select name="date" id="value" class="input inputYear"></select>
+      </div>
+  
+      <p class="inputType">Gender <ion-icon name="help-circle"></ion-icon></p>
+      <div class="inputBox">
+          <label class="radioLabel input" for="female"><p>Female</p>
+            <input type="radio"  id="female" class="radio" name="gender">
+          </label>
+          <label class="radioLabel input" for="male"><p>Male</p>
+            <input type="radio" id="male" class="radio" name="gender">
+          </label>
+          <label class="radioLabel input" for="custom"><p>Custom</p>
+            <input type="radio" id="custom" class="radio" name="gender">
+          </label>
+      </div>
+      <p class="signupPara">People who use our service may have uploaded your contact information to Facebook. <a href="#">Learn more.</a></p>
+      <p class="signupPara">By clicking Sign Up, you agree to our <a href="#">Terms</a>, <a href="#">Privacy Policy</a> and <a href="#">Cookies Policy</a>. You may receive SMS notifications from us and can opt out at any time.</p>
+  
+      <input type="submit" value="Sign Up" class="signupBtn" >
+    </form>
+  </div>
+</div>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
